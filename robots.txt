@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hkawda.org/sitemap.xml
