@@ -1,5 +1,5 @@
 # Generates the static HKAWDA site (plain HTML, no build step needed afterwards).
-import json, collections, html as H
+import json, collections, os, html as H
 OUT = './'
 M = json.load(open('tools/members.json'))
 REGION_COUNT = collections.Counter(m['r'] for m in M)
@@ -44,7 +44,7 @@ def head(title_zh, title_en, desc, path, title=None):
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -52,14 +52,14 @@ def head(title_zh, title_en, desc, path, title=None):
 <header class="site-head">
  <div class="wrap head-row">
   <a class="brand" href="index.html" aria-label="香港鋁門窗同業聯會首頁 HKAWDA home">
-   <span class="brand-chip"><img src="assets/img/logo.png" alt="HKAWDA 標誌" width="64" height="40"></span>
+   <span class="brand-chip"><img src="assets/img/logo.webp" alt="HKAWDA 標誌" width="64" height="40"></span>
    <span class="brand-name"><span class="zh">香港鋁門窗同業聯會</span><span class="en" lang="en">Hong Kong Aluminium Windows &amp; Doors Association</span></span>
   </a>
   <nav class="nav" id="nav" aria-label="主選單 Main">
    {''.join(f'<a href="{h}"{" aria-current=page" if h==path else ""}>{b(z,e)}</a>' for h,z,e in NAV[1:])}
    <a class="nav-cta" href="membership.html"{" aria-current=page" if path=="membership.html" else ""}>{b("申請入會","Join")}</a>
   </nav>
-  <div class="head-tools"><button class="text-size" type="button" aria-pressed="false" aria-label="放大字體 Larger text">A+</button><!--LANGSWITCH--><button class="menu-btn" aria-expanded="false" aria-controls="nav">選單 Menu</button></div>
+  <div class="head-tools"><button class="text-size" type="button" aria-pressed="false" aria-label="A+ 放大字體 A+ Larger text">A+</button><!--LANGSWITCH--><button class="menu-btn" aria-expanded="false" aria-controls="nav">選單 Menu</button></div>
  </div>
 </header>
 <main id="main">
@@ -71,22 +71,22 @@ def foot(extra_js=''):
  <div class="wrap">
   <div class="foot-grid">
    <div class="foot-brand">
-    <span class="brand-chip"><img src="assets/img/logo.png" alt="HKAWDA" width="84" height="52"></span>
+    <span class="brand-chip"><img src="assets/img/logo.webp" alt="HKAWDA" width="84" height="52"></span>
     <div><strong>{b("香港鋁門窗同業聯會有限公司","Hong Kong Aluminium Windows &amp; Doors Association Co., Ltd.")}</strong></div>
     {p("團結業界 · 提升專業 · 為市民服務","Uniting the trade, raising standards, serving the public.")}
     <p class="foot-founder">{b("創會成員：","Founding member: ")}<a href="{LR}" target="_blank" rel="noopener">{b("升威 LE-RELAX 鋁門窗製造及批發","LE-RELAX aluminium windows &amp; doors (manufacturer &amp; wholesaler)")} ↗</a></p>
    </div>
-   <div><h4>業主 FOR HOMEOWNERS</h4><ul>
+   <div><h2 class="fh">業主 FOR HOMEOWNERS</h2><ul>
     <li><a href="find-installer.html">{b("搵會員工程公司","Find an installer")}</a></li>
     <li><a href="homeowners.html">{b("更換鋁窗指南","Window replacement guide")}</a></li>
     <li><a href="homeowners.html#housing">{b("按住宅類型","By type of home")}</a></li>
     <li><a href="homeowners.html#problems">{b("常見窗戶問題","Common window problems")}</a></li>
     <li><a href="window-inspection-notice.html">{b("收到驗窗通知","Window inspection notice")}</a></li></ul></div>
-   <div><h4>業界 FOR THE TRADE</h4><ul>
+   <div><h2 class="fh">業界 FOR THE TRADE</h2><ul>
     <li><a href="membership.html">{b("會員福利及入會","Membership")}</a></li>
     <li><a href="courses.html">{b("行業課程","Courses")}</a></li>
     <li><a href="news.html">{b("消息及活動","News & events")}</a></li></ul></div>
-   <div><h4>聯絡 CONTACT</h4><ul>
+   <div><h2 class="fh">聯絡 CONTACT</h2><ul>
     <li class="mono">{C['email']}</li>
     <li class="mono">Tel {C['tel']}</li>
     <li class="mono">WhatsApp {C['whatsapp']}</li>
@@ -172,7 +172,14 @@ home = f'''
    <div class="fact"><b>2015</b><span>{b("成立","founded")}</span></div>
   </div>
  </div>
- <div class="hero-art" aria-hidden="false">{HERO_SVG}</div>
+ <div class="hero-art">{HERO_SVG}</div>
+</div></section>
+
+<section class="proof" aria-label="認可及合作 Recognition"><div class="wrap proof-row">
+ <div class="proof-item"><img src="assets/img/kcc-logo.webp" alt="九龍總商會 Kowloon Chamber of Commerce" width="48" height="44"><div><strong>{b("九龍總商會","Kowloon Chamber of Commerce")}</strong><span>{b("附屬團體","Affiliated association")}</span></div></div>
+ <div class="proof-item">{'<img class="plogo" src="assets/img/ive-logo.png" alt="IVE">' if os.path.exists(OUT+'assets/img/ive-logo.png') else '<span class="proof-mark">IVE</span>'}<div><strong>{b("香港專業教育學院","Hong Kong Institute of Vocational Education")}</strong><span>{b("合辦行業課程","Industry course partner")}</span></div></div>
+ <div class="proof-item">{'<img class="plogo" src="assets/img/takungpao-logo.png" alt="大公報">' if os.path.exists(OUT+'assets/img/takungpao-logo.png') else '<span class="proof-mark">報</span>'}<div><strong>{b("大公報","Ta Kung Pao")}</strong><span>{b("成立典禮專題報道","Covered our founding")}</span></div></div>
+ <div class="proof-item">{'<img class="plogo" src="assets/img/bd-logo.png" alt="屋宇署">' if os.path.exists(OUT+'assets/img/bd-logo.png') else '<span class="proof-mark">署</span>'}<div><strong>{b("屋宇署","Buildings Department")}</strong><span>{b("就驗窗及收表與署方溝通","Engagement on window inspection")}</span></div></div>
 </div></section>
 
 <section><div class="wrap">
@@ -201,14 +208,18 @@ home = f'''
    <li><span class="tick">✓</span><div><strong>{b("持續培訓，提升工藝","Ongoing training")}</strong>{p("與職業訓練局 IVE 合辦窗戶安裝及維修、強制驗窗相關課程。","Courses with IVE (VTC) on window installation, maintenance and inspection schemes.")}</div></li>
    <li><span class="tick">✓</span><div><strong>{b("法律及專業支援","Legal and professional support")}</strong>{p("會員遇上牌照問題，可獲聯會顧問律師提供意見。","Members facing licensing issues can get advice from the Association's legal adviser.")}</div></li>
   </ul>
+  <blockquote class="pull"><p>{b("「為業界發聲，為市民服務。」","\u201cA voice for the trade, a service to the public.\u201d")}</p><cite>{b("創會會長李少波 ·《大公報》2015","Founding President Lee Siu-po · Ta Kung Pao, 2015")}</cite></blockquote>
  </div>
  <div class="sticker">
   <div class="sticker-mock" role="img" aria-label="聯會會員貼紙示意 Member sticker (illustration)">
-   <img src="assets/img/logo.png" alt="">
+   <img src="assets/img/logo.webp" alt="">
    <div><div class="s1">香港鋁門窗同業聯會<br>認可會員</div><div class="s2">HKAWDA CERTIFIED MEMBER</div><div class="s3">www.hkawda.org</div></div>
   </div>
-  {p("看到這個標誌，可在本網站會員名錄核實公司名稱。","Seen this mark? Check the company name in our member directory.")}
-  <a class="btn ghost" href="find-installer.html">{b("核實會員","Verify a member")}</a>
+  <div class="verify" role="search">
+   <label for="v-q"><strong>{b("核實會員","Verify a member")}</strong></label>
+   <input id="v-q" type="search" placeholder="輸入公司名稱或電話 Company name or phone" autocomplete="off">
+   <div id="v-out" class="v-out" aria-live="polite">{p("看到這個標誌？輸入公司名稱或電話，即時核實是否聯會會員。","Seen this mark? Type the company name or phone number to check membership.")}</div>
+  </div>
  </div>
 </div></section>
 
@@ -237,7 +248,8 @@ home = f'''
 </div></section>
 '''
 write('index.html', home, '香港鋁門窗同業聯會', 'HKAWDA',
-      '香港鋁門窗同業聯會（HKAWDA）：按地區搜尋鋁窗、鋁門及玻璃工程會員公司，了解在香港更換鋁窗的規定。Find vetted aluminium window and door installers in Hong Kong.')
+      '香港鋁門窗同業聯會（HKAWDA）：按地區搜尋鋁窗、鋁門及玻璃工程會員公司，了解在香港更換鋁窗的規定。Find vetted aluminium window and door installers in Hong Kong.',
+      '<script src="assets/js/members-data.js" defer></script>\n<script src="assets/js/verify.js" defer></script>')
 
 # ================= DIRECTORY =================
 SV = {'alu':('鋁窗鋁門','Aluminium'),'glass':('玻璃 / 鏡','Glass'),'gate':('鋼閘鐵閘','Gates'),'steel':('不銹鋼','Stainless steel'),'reno':('裝修工程','Renovation')}
@@ -251,7 +263,7 @@ def card(m):
     acts=''.join(f'<a class="{"call" if i==0 else ""}" href="tel:+852{t.replace(" ","")}">☎ {t}</a>' for i,t in enumerate(tel))
     if m['a']: acts+=f'<a href="{mp}" target="_blank" rel="noopener">{b("地圖","Map")} ↗</a>'
     badge=f'<span class="badge">{b("會長單位","Council")}</span>' if m['c'] else ''
-    return f'<article class="m-card"><div class="m-top"><h3 class="m-name">{H.escape(m["n"])}</h3>{badge}</div><div class="m-meta">{tags}</div>'+(f'<div class="m-addr">{H.escape(m["a"])}</div>' if m['a'] else '')+f'<div class="m-actions">{acts}</div></article>'
+    return f'<article class="m-card"><div class="m-top"><h3 class="m-name"><a href="member-{m['id']}.html">{H.escape(m["n"])}</a></h3>{badge}</div><div class="m-meta">{tags}</div>'+(f'<div class="m-addr">{H.escape(m["a"])}</div>' if m['a'] else '')+f'<div class="m-actions">{acts}</div></article>'
 def sorted_members(lst):
     return sorted(lst,key=lambda m:(not m['c'],m['de'] or 'zz',m['n']))
 
@@ -263,9 +275,9 @@ dirpage = page_title('find-installer.html','搵會員工程公司','Find an inst
 <section style="padding-top:36px"><div class="wrap dir-layout">
  <aside class="filters" aria-label="篩選 Filters">
   <div class="field"><label for="f-q">關鍵字 KEYWORD</label><input id="f-q" type="search" placeholder="公司名、街道、電話 Name, street, phone"></div>
-  <div style="display:grid;gap:8px"><h3>{b("區域","Region")}</h3><div class="seg" id="f-region"></div></div>
+  <div style="display:grid;gap:8px"><h2 class="filter-h">{b("區域","Region")}</h2><div class="seg" id="f-region"></div></div>
   <div class="field"><label for="f-district">地區 DISTRICT</label><select id="f-district"></select></div>
-  <div style="display:grid;gap:8px"><h3>{b("業務","Trade")}</h3><div class="chips" id="f-svc"></div></div>
+  <div style="display:grid;gap:8px"><h2 class="filter-h">{b("業務","Trade")}</h2><div class="chips" id="f-svc"></div></div>
   <label class="toggle" for="f-council"><input type="checkbox" id="f-council"><span>{b("只顯示會長單位","Council member firms only")}</span></label>
   <button class="btn ghost" type="button" id="f-reset">{b("重設","Reset filters")}</button>
  </aside>
@@ -472,6 +484,48 @@ for (dz, de, r), lst in DISTRICTS.items():
     write(dslug(de), body, f'{dz}鋁窗', f'{de} windows',
           f'{dz}鋁窗、鋁門及玻璃工程公司：{len(lst)} 間香港鋁門窗同業聯會會員的地址及電話，換鋁窗、鋁窗維修可直接查詢。Aluminium window installers in {de}, Hong Kong: HKAWDA member firms with address and phone.',
           title=(f'{dz}鋁窗工程公司｜{dz}換鋁窗、鋁窗維修｜HKAWDA', f'Aluminium Window Installers in {de}, Hong Kong | HKAWDA'))
+
+# ================= MEMBER PROFILE PAGES =================
+SVL = {'alu':('鋁窗、鋁門','aluminium windows and doors'),'glass':('玻璃及鏡','glass and mirrors'),'gate':('鋼閘、鐵閘','metal gates'),'steel':('不銹鋼工程','stainless steel work'),'reno':('裝修工程','renovation')}
+for m in M:
+    dz = m['d'] or RN[m['r']][0]; de = m['de'] or RN[m['r']][1]
+    tel = m['t'] or []
+    import urllib.parse as _up
+    mp = 'https://www.google.com/maps/search/?api=1&query=' + _up.quote(m['a'] + ' 香港')
+    svz = '、'.join(SVL[s][0] for s in m['s']) or '鋁門窗相關工程'
+    sve = ', '.join(SVL[s][1] for s in m['s']) or 'aluminium window and door work'
+    same = [x for x in sorted_members(M) if x['d'] == m['d'] and x['id'] != m['id']][:6]
+    same_html = ''.join(f'<a class="chip" href="member-{x["id"]}.html">{H.escape(x["n"])}</a>' for x in same)
+    rows = f'<div><dt>{b("地區","District")}</dt><dd>{b(dz, de)}</dd></div>'
+    if m['a']: rows += f'<div><dt>{b("地址","Address")}</dt><dd>{H.escape(m["a"])} <a class="ext" href="{mp}" target="_blank" rel="noopener">{b("地圖","Map")} ↗</a></dd></div>'
+    if tel: rows += f'<div><dt>{b("電話","Phone")}</dt><dd>' + ' / '.join(f'<a href="tel:+852{t.replace(" ","")}">{t}</a>' for t in tel) + '</dd></div>'
+    rows += f'<div><dt>{b("業務","Trade")}</dt><dd>{b(svz, sve.capitalize())}</dd></div>'
+    rows += f'<div><dt>{b("會籍","Membership")}</dt><dd>{b("香港鋁門窗同業聯會會員" + ("（會長單位）" if m["c"] else ""), "HKAWDA member" + (" (council member firm)" if m["c"] else ""))}</dd></div>'
+    ld = {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":m['n'],
+          "address":{"@type":"PostalAddress","streetAddress":m['a'],"addressRegion":de,"addressCountry":"HK"},
+          "areaServed":de,"memberOf":{"@type":"Organization","name":"香港鋁門窗同業聯會 HKAWDA","url":BASE}}
+    if tel: ld["telephone"] = "+852 " + tel[0]
+    call = f'<a class="btn red" href="tel:+852{tel[0].replace(" ","")}">{b("致電 "+tel[0],"Call "+tel[0])}</a>' if tel else ''
+    body = f'''<div class="page-title"><div class="wrap">
+ <div class="crumb"><a href="index.html">首頁 Home</a> / <a href="{dslug(de)}">{dz} {de}</a> / {H.escape(m["n"])}</div>
+ <div class="member-head"><h1>{H.escape(m["n"])}</h1><span class="verified">✓ {b("聯會會員","Verified member")}</span>{f'<span class="badge">{b("會長單位","Council")}</span>' if m["c"] else ''}</div>
+ {p(f"{dz}{svz}工程公司，香港鋁門窗同業聯會會員。", f"{sve.capitalize()} contractor in {de}, Hong Kong. Member of HKAWDA.", "lede")}
+</div></div>
+<section style="padding-top:32px"><div class="wrap guide-layout">
+ <div style="display:grid;gap:28px;min-width:0">
+  <dl class="contact-list member-dl" style="margin:0">{rows}</dl>
+  <div class="btn-row">{call}{f'<a class="btn ghost" href="{mp}" target="_blank" rel="noopener">{b("在地圖查看","View on map")} ↗</a>' if m['a'] else ''}</div>
+  <div class="note">{p("資料由會員提供。聯會不就個別工程的質素、價格或合約作出保證；請索取書面報價並簽訂書面合約。資料有誤，請電郵 "+C['email']+"。","Details are supplied by the member. The Association does not guarantee the quality, price or terms of any individual job; get a written quotation and contract. To correct this listing, email "+C['email']+".")}</div>
+  {f'<div style="display:grid;gap:10px"><h2 class="dist-h">{b(dz+"其他會員","Other members in "+de)}</h2><div class="chips">{same_html}</div></div>' if same else ''}
+ </div>
+ <aside class="guide-side"><div class="cta-card"><h3>{b("找師傅前先看","Before you hire")}</h3>
+  <ul class="src-list"><li><a href="homeowners.html#quote">{b("書面報價應列明的項目","What a quotation should include")}</a></li><li><a href="homeowners.html#rules">{b("小型工程及驗窗規定","Minor works &amp; inspection rules")}</a></li><li><a href="homeowners.html#housing">{b("按住宅類型指南","Guides by type of home")}</a></li></ul>
+ </div></aside>
+</div></section>
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'''
+    write(f'member-{m["id"]}.html', body, m['n'], m['n'],
+          f'{m["n"]}：{dz}{svz}工程公司，香港鋁門窗同業聯會會員。地址：{m["a"]}。{("電話："+tel[0]+"。") if tel else ""}{sve.capitalize()} contractor in {de}, Hong Kong; HKAWDA member.{(" Phone "+tel[0]+".") if tel else ""}',
+          title=(f'{m["n"]}｜{dz}鋁窗工程｜香港鋁門窗同業聯會會員', f'{m["n"]} | Aluminium window contractor in {de} | HKAWDA member'))
 
 # ================= HOMEOWNER GUIDE =================
 guide = page_title('homeowners.html','業主指南','Homeowner guide','更換鋁窗業主指南','Replacing aluminium windows in Hong Kong: a homeowner guide',

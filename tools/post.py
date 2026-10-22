@@ -114,6 +114,19 @@ for p in pages:
             ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":qa})
         for j in ld:
             sc=s.new_tag('script',type='application/ld+json'); sc.string=json.dumps(j,ensure_ascii=False); head.append(sc); head.append('\n')
+        # performance: WebP images + explicit dimensions (prevents layout shift)
+        from PIL import Image as _Im
+        for im in s.find_all('img'):
+            src=im.get('src','')
+            if src.startswith('assets/img/'):
+                if src.endswith('.jpg') and os.path.exists('./'+src[:-4]+'.webp' if not os.path.exists('site') else './'+src[:-4]+'.webp'):
+                    src=src[:-4]+'.webp'; im['src']=src
+                fp=('./' if os.path.exists('./assets') else './')+src
+                if os.path.exists(fp) and not im.get('width'):
+                    w,h=_Im.open(fp).size; im['width']=str(w); im['height']=str(h)
+                if not im.get('loading') and not im.get('fetchpriority') and 'brand-chip' not in ' '.join(im.parent.get('class',[])):
+                    im['loading']='lazy'
+                im['decoding']='async'
         out=str(s)
         # language switch
         if lang=='zh':
@@ -123,6 +136,7 @@ for p in pages:
         out=out.replace('<!--LANGSWITCH-->',sw)
         if lang=='en':
             out=re.sub(r'(href|src)="(assets/|docs/)',r'\1="../\2',out)
+            out=re.sub(r'(, |srcset=")(assets/)',r'\1../\2',out)
             out=out.replace('og:image" content="'+BASE,'og:image" content="'+BASE)
         open(('./' if lang=='zh' else './en/')+p,'w').write(out)
 # sitemap with hreflang alternates
