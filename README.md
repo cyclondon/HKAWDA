@@ -18,6 +18,7 @@ All pages sit in the top folder (Chinese) and in `en/` (English) — no deeper f
 | `homeowners.html` | Homeowner guide hub + FAQ |
 | `housing-*.html` (5) | 私人住宅, 唐樓, 居屋, 公屋, 村屋 |
 | `window-*.html`, `soundproof-windows.html`, `typhoon-window-check.html` (6) | Common problems: leaks, rusty hinges, latches, inspection notices, soundproofing, typhoon check |
+| `member-m001.html` … `member-m152.html` | One profile page per member firm (name, district, address, phone, map, trade, verified badge, Google business data) |
 | `about.html`, `membership.html`, `courses.html`, `news.html`, `contact.html`, `404.html` | Association pages |
 
 ## SEO built in
@@ -29,8 +30,14 @@ All pages sit in the top folder (Chinese) and in `en/` (English) — no deeper f
 - `sitemap.xml` (both languages) and `robots.txt`.
 - After going live: add the site to **Google Search Console**, submit `https://hkawda.org/sitemap.xml`, and create/claim a **Google Business Profile** for the association.
 
+## Performance (Lighthouse, mobile)
+Tested locally: Performance 98–100, Accessibility 98–100, Best Practices 100, SEO 100. Images are WebP with fixed dimensions; the home photo has a smaller version for phones. (GitHub Pages adds compression and caching automatically.)
+
 ## Mobile
 Mobile-first layout, 44px+ tap targets, fixed bottom bar with "搵會員工程公司" and WhatsApp buttons, phone numbers are tap-to-call, addresses open Google Maps.
+
+## Partner logos (optional)
+The recognition strip on the home page shows text badges for IVE, 大公報 and 屋宇署. To show official logos instead, save them as square PNGs named `ive-logo.png`, `takungpao-logo.png` or `bd-logo.png` in `assets/img/` and rebuild. Only use logos you have written permission to use.
 
 ## Editing
 The pages are generated from two small Python scripts in `tools/` so both languages stay in sync.
@@ -43,7 +50,7 @@ The pages are generated from two small Python scripts in `tools/` so both langua
    ```
    Always run both, in that order.
 
-Member fields in `members.json`: `n` name, `a` address, `t` phones, `r` region (`hki`/`kln`/`nt`), `d`/`de` district (中/EN), `c` true = 會長單位, `s` trade tags (`alu`,`glass`,`gate`,`steel`,`reno`).
+Member fields in `members.json` — `id` is the permanent page name (e.g. `m001` → `member-m001.html`); give new members the next unused number and never reuse one: `n` name, `a` address, `t` phones, `r` region (`hki`/`kln`/`nt`), `d`/`de` district (中/EN), `c` true = 會長單位, `s` trade tags (`alu`,`glass`,`gate`,`steel`,`reno`).
 
 ## Publish on GitHub Pages
 1. Create a repository and upload the contents of this folder to the root.
