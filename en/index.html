@@ -14,7 +14,7 @@
 <meta content="website" property="og:type"/>
 <link href="../assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="../assets/css/style.css" rel="stylesheet"/>
 <link href="https://hkawda.org/" hreflang="zh-Hant-HK" rel="alternate"/>
 <link href="https://hkawda.org/en/" hreflang="en" rel="alternate"/>
@@ -30,14 +30,14 @@
 <header class="site-head">
 <div class="wrap head-row">
 <a aria-label="HKAWDA home" class="brand" href="index.html">
-<span class="brand-chip"><img alt="HKAWDA 標誌" height="40" src="../assets/img/logo.png" width="64"/></span>
+<span class="brand-chip"><img alt="HKAWDA 標誌" decoding="async" height="40" src="../assets/img/logo.webp" width="64"/></span>
 <span class="brand-name">Hong Kong Aluminium Windows &amp; Doors Association</span>
 </a>
 <nav aria-label="Main" class="nav" id="nav">
 <a href="find-installer.html">Find an installer</a><a href="homeowners.html">Homeowner guide</a><a href="about.html">About</a><a href="news.html">News &amp; events</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a>
 <a class="nav-cta" href="membership.html">Join</a>
 </nav>
-<div class="head-tools"><button aria-label="Larger text" aria-pressed="false" class="text-size" type="button">A+</button><a class="lang-link" href="../index.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">中文</a><button aria-controls="nav" aria-expanded="false" class="menu-btn">Menu</button></div>
+<div class="head-tools"><button aria-label="A+ Larger text" aria-pressed="false" class="text-size" type="button">A+</button><a class="lang-link" href="../index.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">中文</a><button aria-controls="nav" aria-expanded="false" class="menu-btn">Menu</button></div>
 </div>
 </header>
 <main id="main">
@@ -60,7 +60,7 @@
 <div class="fact"><b>2015</b><span>founded</span></div>
 </div>
 </div>
-<div aria-hidden="false" class="hero-art"><svg aria-label="Elevation of an aluminium window" role="img" viewbox="0 0 400 470">
+<div class="hero-art"><svg aria-label="Elevation of an aluminium window" role="img" viewbox="0 0 400 470">
 <g fill="none" stroke="currentColor">
 <rect height="360" stroke-width="2.2" width="270" x="70" y="50"></rect>
 <rect height="340" stroke-width="1" width="250" x="80" y="60"></rect>
@@ -96,6 +96,12 @@
 <text class="dim" x="70" y="466">UNIT: mm · ILLUSTRATIVE</text>
 </svg></div>
 </div></section>
+<section aria-label="Recognition" class="proof"><div class="wrap proof-row">
+<div class="proof-item"><img alt="Kowloon Chamber of Commerce" decoding="async" height="44" loading="lazy" src="../assets/img/kcc-logo.webp" width="48"/><div><strong>Kowloon Chamber of Commerce</strong><span>Affiliated association</span></div></div>
+<div class="proof-item"><img alt="IVE" class="plogo" decoding="async" height="86" loading="lazy" src="../assets/img/ive-logo.png" width="200"/><div><strong>Hong Kong Institute of Vocational Education</strong><span>Industry course partner</span></div></div>
+<div class="proof-item"><img alt="大公報" class="plogo" decoding="async" height="192" loading="lazy" src="../assets/img/takungpao-logo.png" width="192"/><div><strong>Ta Kung Pao</strong><span>Covered our founding</span></div></div>
+<div class="proof-item"><img alt="屋宇署" class="plogo" decoding="async" height="96" loading="lazy" src="../assets/img/bd-logo.png" width="91"/><div><strong>Buildings Department</strong><span>Engagement on window inspection</span></div></div>
+</div></section>
 <section><div class="wrap">
 <div class="sec-head"><div class="eyebrow">HOMEOWNERS</div>
 <h2>Three steps to replacing your windows</h2></div>
@@ -121,14 +127,18 @@
 <li><span class="tick">✓</span><div><strong>Ongoing training</strong><p></p><p>Courses with IVE (VTC) on window installation, maintenance and inspection schemes.</p></div></li>
 <li><span class="tick">✓</span><div><strong>Legal and professional support</strong><p></p><p>Members facing licensing issues can get advice from the Association's legal adviser.</p></div></li>
 </ul>
+<blockquote class="pull"><p>“A voice for the trade, a service to the public.”</p><cite>Founding President Lee Siu-po · Ta Kung Pao, 2015</cite></blockquote>
 </div>
 <div class="sticker">
 <div aria-label="Member sticker (illustration)" class="sticker-mock" role="img">
-<img alt="" src="../assets/img/logo.png"/>
+<img alt="" decoding="async" height="100" loading="lazy" src="../assets/img/logo.webp" width="180"/>
 <div><div class="s1">香港鋁門窗同業聯會<br/>認可會員</div><div class="s2">HKAWDA CERTIFIED MEMBER</div><div class="s3">www.hkawda.org</div></div>
 </div>
-<p></p><p>Seen this mark? Check the company name in our member directory.</p>
-<a class="btn ghost" href="find-installer.html">Verify a member</a>
+<div class="verify" role="search">
+<label for="v-q"><strong>Verify a member</strong></label>
+<input autocomplete="off" id="v-q" placeholder="Company name or phone" type="search"/>
+<div aria-live="polite" class="v-out" id="v-out"><p></p><p>Seen this mark? Type the company name or phone number to check membership.</p></div>
+</div>
 </div>
 </div></section>
 <section class="alt"><div class="wrap">
@@ -142,13 +152,13 @@
 <div class="sec-head"><div class="eyebrow">NEWS &amp; EVENTS</div>
 <h2>Latest from the Association</h2></div>
 <div class="news-grid">
-<a class="news-card" href="news.html#2025-zhongshan"><div class="ph"><img alt="會員參觀中山鋁門窗廠生產線" loading="lazy" src="../assets/img/zhongshan-2025-factory.jpg"/></div><div class="bd"><div class="date">2025-11-29</div><h3>Aluminium window &amp; glass factory tour</h3><p></p><p>Site visits to window and glass factories to share the latest trends and processing techniques.</p></div></a>
-<a class="news-card" href="news.html#2023-zhongshan"><div class="ph"><img alt="會員參觀中山玻璃加工車間" loading="lazy" src="../assets/img/zhongshan-2023-glass.jpg"/></div><div class="bd"><div class="date">2023-12-09</div><h3>Zhongshan factory visit</h3><p></p><p>Nearly fifty members toured aluminium window and glass production lines.</p></div></a>
-<a class="news-card" href="news.html#2015-founding"><div class="ph"><img alt="2015 年成立典禮全體合照" loading="lazy" src="../assets/img/founding-2015-c.jpg"/></div><div class="bd"><div class="date">2015-11-30</div><h3>Founding ceremony</h3><p></p><p>Close to a hundred guests marked the Association's founding, covered by Ta Kung Pao.</p></div></a>
+<a class="news-card" href="news.html#2025-zhongshan"><div class="ph"><img alt="會員參觀中山鋁門窗廠生產線" decoding="async" height="900" loading="lazy" src="../assets/img/zhongshan-2025-factory.webp" width="1600"/></div><div class="bd"><div class="date">2025-11-29</div><h3>Aluminium window &amp; glass factory tour</h3><p></p><p>Site visits to window and glass factories to share the latest trends and processing techniques.</p></div></a>
+<a class="news-card" href="news.html#2023-zhongshan"><div class="ph"><img alt="會員參觀中山玻璃加工車間" decoding="async" height="1200" loading="lazy" src="../assets/img/zhongshan-2023-glass.webp" width="1600"/></div><div class="bd"><div class="date">2023-12-09</div><h3>Zhongshan factory visit</h3><p></p><p>Nearly fifty members toured aluminium window and glass production lines.</p></div></a>
+<a class="news-card" href="news.html#2015-founding"><div class="ph"><img alt="2015 年成立典禮全體合照" decoding="async" height="915" loading="lazy" src="../assets/img/founding-2015-c.webp" width="1400"/></div><div class="bd"><div class="date">2015-11-30</div><h3>Founding ceremony</h3><p></p><p>Close to a hundred guests marked the Association's founding, covered by Ta Kung Pao.</p></div></a>
 </div>
 </div></section>
 <section class="band"><div class="wrap recog">
-<img alt="九龍總商會標誌" height="100" src="../assets/img/kcc-logo.jpg" width="110"/>
+<img alt="九龍總商會標誌" decoding="async" height="100" loading="lazy" src="../assets/img/kcc-logo.webp" width="110"/>
 <div style="display:grid;gap:8px"><h3>Affiliated association of the Kowloon Chamber of Commerce</h3><p></p><p>HKAWDA is recognised by the Kowloon Chamber of Commerce as an affiliated association.</p></div>
 <a class="btn red" href="membership.html">In the trade? Join us</a>
 </div></section>
@@ -157,22 +167,22 @@
 <div class="wrap">
 <div class="foot-grid">
 <div class="foot-brand">
-<span class="brand-chip"><img alt="HKAWDA" height="52" src="../assets/img/logo.png" width="84"/></span>
+<span class="brand-chip"><img alt="HKAWDA" decoding="async" height="52" src="../assets/img/logo.webp" width="84"/></span>
 <div><strong>Hong Kong Aluminium Windows &amp; Doors Association Co., Ltd.</strong></div>
 <p></p><p>Uniting the trade, raising standards, serving the public.</p>
 <p class="foot-founder">Founding member: <a href="https://www.le-relax.co" rel="noopener" target="_blank">LE-RELAX aluminium windows &amp; doors (manufacturer &amp; wholesaler) ↗</a></p>
 </div>
-<div><h4>FOR HOMEOWNERS</h4><ul>
+<div><h2 class="fh">FOR HOMEOWNERS</h2><ul>
 <li><a href="find-installer.html">Find an installer</a></li>
 <li><a href="homeowners.html">Window replacement guide</a></li>
 <li><a href="homeowners.html#housing">By type of home</a></li>
 <li><a href="homeowners.html#problems">Common window problems</a></li>
 <li><a href="window-inspection-notice.html">Window inspection notice</a></li></ul></div>
-<div><h4>FOR THE TRADE</h4><ul>
+<div><h2 class="fh">FOR THE TRADE</h2><ul>
 <li><a href="membership.html">Membership</a></li>
 <li><a href="courses.html">Courses</a></li>
 <li><a href="news.html">News &amp; events</a></li></ul></div>
-<div><h4>CONTACT</h4><ul>
+<div><h2 class="fh">CONTACT</h2><ul>
 <li class="mono">info@hkawda.org</li>
 <li class="mono">Tel 2381 4161</li>
 <li class="mono">WhatsApp 6915 6828</li>
@@ -183,5 +193,7 @@
 </footer>
 <nav aria-label="Quick actions" class="mbar"><a href="find-installer.html">Find an installer</a><a class="wa" href="https://wa.me/85269156828" rel="noopener" target="_blank">WhatsApp</a></nav>
 <script src="../assets/js/main.js"></script>
+<script defer="" src="../assets/js/members-data.js"></script>
+<script defer="" src="../assets/js/verify.js"></script>
 </body>
 </html>
