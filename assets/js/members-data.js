@@ -17,7 +17,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m001"
 },
 {
 "n": "捷榮(亞洲)工程有限公司",
@@ -34,7 +35,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "reno"
-]
+],
+"id": "m002"
 },
 {
 "n": "葉興鋁質玻璃工程公司",
@@ -52,7 +54,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m003"
 },
 {
 "n": "恆裕鋁鋼工程有限公司",
@@ -69,7 +72,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m004"
 },
 {
 "n": "志豐工程有限公司",
@@ -84,7 +88,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "reno"
-]
+],
+"id": "m005"
 },
 {
 "n": "Alumex International Ltd.",
@@ -101,7 +106,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m006"
 },
 {
 "n": "富寶國際貿易有限公司",
@@ -116,7 +122,8 @@ window.HKAWDA_MEMBERS = [
 "d": "九龍城",
 "de": "Kowloon City",
 "c": false,
-"s": []
+"s": [],
+"id": "m007"
 },
 {
 "n": "天成鋁質裝飾公司",
@@ -133,7 +140,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m008"
 },
 {
 "n": "港龍鋁窗工程有限公司(廣東道)",
@@ -150,7 +158,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m009"
 },
 {
 "n": "祥興玻璃工程有限公司",
@@ -163,7 +172,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m010"
 },
 {
 "n": "Bestmate Engineering Service Company",
@@ -174,7 +184,8 @@ window.HKAWDA_MEMBERS = [
 "d": "黃大仙",
 "de": "Wong Tai Sin",
 "c": false,
-"s": []
+"s": [],
+"id": "m011"
 },
 {
 "n": "大華鋁窗工程有限公司",
@@ -191,7 +202,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m012"
 },
 {
 "n": "多拿鋼閘公司",
@@ -208,7 +220,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m013"
 },
 {
 "n": "銀通玻璃(香港)有限公司",
@@ -225,7 +238,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m014"
 },
 {
 "n": "理程玻璃鋁窗工程公司",
@@ -239,7 +253,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m015"
 },
 {
 "n": "盛峰工程",
@@ -256,7 +271,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m016"
 },
 {
 "n": "邦藝玻璃鋁窗",
@@ -272,7 +288,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m017"
 },
 {
 "n": "德駿玻璃金屬工程公司",
@@ -289,7 +306,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m018"
 },
 {
 "n": "義記工程有限公司",
@@ -306,7 +324,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m019"
 },
 {
 "n": "富昌裝修設計工程公司",
@@ -323,7 +342,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m020"
 },
 {
 "n": "聯興鋁質工程公司(慈雲山)",
@@ -340,7 +360,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m021"
 },
 {
 "n": "新亞鐵器工程有限公司",
@@ -357,7 +378,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m022"
 },
 {
 "n": "銘鋒鋁質有限公司",
@@ -374,7 +396,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m023"
 },
 {
 "n": "東亞鋁質工程公司",
@@ -391,7 +414,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m024"
 },
 {
 "n": "天藝工程有限公司",
@@ -408,7 +432,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m025"
 },
 {
 "n": "勇記裝修工程公司",
@@ -425,7 +450,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m026"
 },
 {
 "n": "群聲鋼閘公司",
@@ -442,7 +468,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m027"
 },
 {
 "n": "眾合鋁窗玻璃工程有限公司",
@@ -458,7 +485,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m028"
 },
 {
 "n": "西德鋼閘有限公司",
@@ -471,7 +499,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m029"
 },
 {
 "n": "佳誠鋁窗工程公司",
@@ -486,7 +515,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m030"
 },
 {
 "n": "恆發室內裝飾公司",
@@ -499,7 +529,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m031"
 },
 {
 "n": "日本鋼閘有限公司",
@@ -512,7 +543,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m032"
 },
 {
 "n": "新莫聯鋁窗鋼門",
@@ -525,7 +557,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m033"
 },
 {
 "n": "錦盛工程有限公司",
@@ -542,7 +575,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m034"
 },
 {
 "n": "匯竣工程公司有限公司",
@@ -559,7 +593,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m035"
 },
 {
 "n": "蔡全鋁窗",
@@ -576,7 +611,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m036"
 },
 {
 "n": "協議金屬工程有限公司",
@@ -593,7 +629,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m037"
 },
 {
 "n": "曉春鋁窗有限公司",
@@ -610,7 +647,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m038"
 },
 {
 "n": "晴軒布藝窗簾浴屏潔具",
@@ -625,7 +663,8 @@ window.HKAWDA_MEMBERS = [
 "d": "油尖旺",
 "de": "Yau Tsim Mong",
 "c": false,
-"s": []
+"s": [],
+"id": "m039"
 },
 {
 "n": "富城不銹鋼銅(制品)工程公司",
@@ -643,7 +682,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "reno",
 "steel"
-]
+],
+"id": "m040"
 },
 {
 "n": "百佳玻璃鋁質有限公司",
@@ -661,7 +701,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m041"
 },
 {
 "n": "鴻興鋁鋼工程有限公司",
@@ -678,7 +719,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m042"
 },
 {
 "n": "集貴鋁質工程有限公司",
@@ -695,7 +737,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m043"
 },
 {
 "n": "恆通鋁鋼工程有限公司",
@@ -712,7 +755,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m044"
 },
 {
 "n": "豐泛鋁鋼工程有限公司",
@@ -729,7 +773,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m045"
 },
 {
 "n": "先鋒鋁質裝修有限公司",
@@ -746,7 +791,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m046"
 },
 {
 "n": "梁興裝修工程公司",
@@ -759,7 +805,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m047"
 },
 {
 "n": "世林鐵鋁裝飾工程",
@@ -777,7 +824,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m048"
 },
 {
 "n": "新業興鋁質工程有限公司",
@@ -790,7 +838,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m049"
 },
 {
 "n": "俊煒鋁質工程公司",
@@ -805,7 +854,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m050"
 },
 {
 "n": "創發工程公司",
@@ -820,7 +870,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m051"
 },
 {
 "n": "浩福行不銹鋼工程有限公司",
@@ -836,7 +887,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "reno",
 "steel"
-]
+],
+"id": "m052"
 },
 {
 "n": "宏美專業工程有限公司",
@@ -851,7 +903,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m053"
 },
 {
 "n": "永固鋁質門窗工程",
@@ -866,7 +919,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m054"
 },
 {
 "n": "世林鐵器鋁質工程",
@@ -883,7 +937,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m055"
 },
 {
 "n": "興發鋁質工程公司",
@@ -898,7 +953,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m056"
 },
 {
 "n": "得興裝飾工程公司",
@@ -911,7 +967,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m057"
 },
 {
 "n": "佳誠鋁窗工程有限公司",
@@ -926,7 +983,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m058"
 },
 {
 "n": "卓誠玻璃屋設計有限公司",
@@ -941,7 +999,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m059"
 },
 {
 "n": "新葉興鋁質玻璃工程有限公司",
@@ -957,7 +1016,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m060"
 },
 {
 "n": "昇輝鋁鋼工程公司",
@@ -972,7 +1032,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m061"
 },
 {
 "n": "中天工程服務有限公司",
@@ -987,7 +1048,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m062"
 },
 {
 "n": "協豐鐵器鋁業有限公司",
@@ -1001,7 +1063,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m063"
 },
 {
 "n": "駿威貿易(工程)有限公司",
@@ -1018,7 +1081,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "reno"
-]
+],
+"id": "m064"
 },
 {
 "n": "卓誠鋁窗工程公司",
@@ -1033,7 +1097,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m065"
 },
 {
 "n": "逴譽鋁鋼玻璃屋工程",
@@ -1051,7 +1116,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m066"
 },
 {
 "n": "雷恆鋁業有限公司",
@@ -1066,7 +1132,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m067"
 },
 {
 "n": "永和鋁鋼工程有限公司",
@@ -1083,7 +1150,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m068"
 },
 {
 "n": "和興五金裝飾工程公司",
@@ -1100,7 +1168,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m069"
 },
 {
 "n": "泗海玻璃鏡業",
@@ -1117,7 +1186,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m070"
 },
 {
 "n": "藝駿工程",
@@ -1132,7 +1202,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m071"
 },
 {
 "n": "金門鐵閘(工程)有限公司",
@@ -1149,7 +1220,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "gate"
-]
+],
+"id": "m072"
 },
 {
 "n": "中建五金玻璃鏡業",
@@ -1162,7 +1234,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m073"
 },
 {
 "n": "萬昌鋁窗工程公司",
@@ -1175,7 +1248,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m074"
 },
 {
 "n": "恆昇工程",
@@ -1188,7 +1262,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m075"
 },
 {
 "n": "瑞輝裝飾工程有限公司",
@@ -1205,7 +1280,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m076"
 },
 {
 "n": "麗誌裝修工程有限公司",
@@ -1222,7 +1298,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m077"
 },
 {
 "n": "集偉工程公司",
@@ -1239,7 +1316,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m078"
 },
 {
 "n": "永茂鋁質不銹鋼工程公司",
@@ -1253,7 +1331,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "steel"
-]
+],
+"id": "m079"
 },
 {
 "n": "美雅居室內設計裝飾工程公司",
@@ -1270,7 +1349,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m080"
 },
 {
 "n": "祥駿鋁窗鋼閘工程公司",
@@ -1288,7 +1368,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m081"
 },
 {
 "n": "中華鋁窗裝修公司",
@@ -1305,7 +1386,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m082"
 },
 {
 "n": "信德鋁鋼工程有限公司",
@@ -1322,7 +1404,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m083"
 },
 {
 "n": "偉泰工程有限公司",
@@ -1339,7 +1422,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m084"
 },
 {
 "n": "鼎豐鋁窗鋼閘設計裝修公司",
@@ -1357,7 +1441,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m085"
 },
 {
 "n": "緻毅工程",
@@ -1374,7 +1459,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m086"
 },
 {
 "n": "合益鋁鋼工程有限公司",
@@ -1391,7 +1477,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m087"
 },
 {
 "n": "永成",
@@ -1402,7 +1489,8 @@ window.HKAWDA_MEMBERS = [
 "d": "元朗",
 "de": "Yuen Long",
 "c": false,
-"s": []
+"s": [],
+"id": "m088"
 },
 {
 "n": "益生工程有限公司",
@@ -1417,7 +1505,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m089"
 },
 {
 "n": "精工鋁質玻璃工程",
@@ -1433,7 +1522,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m090"
 },
 {
 "n": "軍豪鋁質不銹鋼工程有限公司",
@@ -1451,7 +1541,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "steel"
-]
+],
+"id": "m091"
 },
 {
 "n": "美景鋁質工程有限公司",
@@ -1468,7 +1559,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m092"
 },
 {
 "n": "(世紀)生活創意有限公司",
@@ -1483,7 +1575,8 @@ window.HKAWDA_MEMBERS = [
 "d": "元朗",
 "de": "Yuen Long",
 "c": false,
-"s": []
+"s": [],
+"id": "m093"
 },
 {
 "n": "進毅鋁鋼工程公司",
@@ -1500,7 +1593,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m094"
 },
 {
 "n": "承興鋁質鋼閘工程公司",
@@ -1518,7 +1612,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m095"
 },
 {
 "n": "精雅鋁鋼工程有限公司",
@@ -1535,7 +1630,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m096"
 },
 {
 "n": "裕達玻璃屋設計有限公司",
@@ -1552,7 +1648,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m097"
 },
 {
 "n": "基富工程(國際)有限公司",
@@ -1569,7 +1666,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m098"
 },
 {
 "n": "雅麗鋁材工程有限公司(屯門)",
@@ -1586,7 +1684,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m099"
 },
 {
 "n": "華泰鋁質裝修公司(屯門)",
@@ -1603,7 +1702,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m100"
 },
 {
 "n": "言達有限公司",
@@ -1618,7 +1718,8 @@ window.HKAWDA_MEMBERS = [
 "d": "元朗",
 "de": "Yuen Long",
 "c": false,
-"s": []
+"s": [],
+"id": "m101"
 },
 {
 "n": "美樂家居設計工程",
@@ -1635,7 +1736,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m102"
 },
 {
 "n": "專業鋁鋼玻璃工程有限公司",
@@ -1653,7 +1755,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m103"
 },
 {
 "n": "卓嘉裝飾工程公司",
@@ -1670,7 +1773,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m104"
 },
 {
 "n": "財雄鋼鐵鋁工程",
@@ -1688,7 +1792,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "gate"
-]
+],
+"id": "m105"
 },
 {
 "n": "浩信工程公司",
@@ -1701,7 +1806,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m106"
 },
 {
 "n": "班馬戶外工程",
@@ -1716,7 +1822,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m107"
 },
 {
 "n": "羲舜工程有限公司",
@@ -1729,7 +1836,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m108"
 },
 {
 "n": "天晉設計工程有限公司",
@@ -1746,7 +1854,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m109"
 },
 {
 "n": "宏江工程有限公司",
@@ -1761,7 +1870,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m110"
 },
 {
 "n": "漢興裝飾設計工程公司",
@@ -1778,7 +1888,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m111"
 },
 {
 "n": "國華鋁鋼工程",
@@ -1795,7 +1906,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m112"
 },
 {
 "n": "蝴蝶谷有限公司",
@@ -1810,7 +1922,8 @@ window.HKAWDA_MEMBERS = [
 "d": "大埔",
 "de": "Tai Po",
 "c": false,
-"s": []
+"s": [],
+"id": "m113"
 },
 {
 "n": "宏達鋁窗工程公司",
@@ -1827,7 +1940,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m114"
 },
 {
 "n": "港隆鋁鋼工程公司",
@@ -1844,7 +1958,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m115"
 },
 {
 "n": "優質工程顧問有限公司",
@@ -1861,7 +1976,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m116"
 },
 {
 "n": "駿昇鋁鋼工程有限公司",
@@ -1878,7 +1994,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m117"
 },
 {
 "n": "快達鋁質工程公司",
@@ -1893,7 +2010,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m118"
 },
 {
 "n": "恆昌玻璃屋有限公司",
@@ -1910,7 +2028,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m119"
 },
 {
 "n": "葵涌玻璃有限公司",
@@ -1927,7 +2046,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m120"
 },
 {
 "n": "建興鋁門窗工程公司",
@@ -1942,7 +2062,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m121"
 },
 {
 "n": "超力鏡業",
@@ -1957,7 +2078,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m122"
 },
 {
 "n": "尊尚(香港)工程有限公司",
@@ -1972,7 +2094,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m123"
 },
 {
 "n": "歐陸行有限公司",
@@ -1985,7 +2108,8 @@ window.HKAWDA_MEMBERS = [
 "d": "沙田",
 "de": "Sha Tin",
 "c": false,
-"s": []
+"s": [],
+"id": "m124"
 },
 {
 "n": "順達裝飾設計工程有限公司",
@@ -2000,7 +2124,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m125"
 },
 {
 "n": "得駿貿易有限公司",
@@ -2013,7 +2138,8 @@ window.HKAWDA_MEMBERS = [
 "d": "元朗",
 "de": "Yuen Long",
 "c": false,
-"s": []
+"s": [],
+"id": "m126"
 },
 {
 "n": "其昌鋁窗工程有限公司",
@@ -2026,7 +2152,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m127"
 },
 {
 "n": "輝達鋁窗專業維修防漏工程有限公司",
@@ -2041,7 +2168,8 @@ window.HKAWDA_MEMBERS = [
 "c": true,
 "s": [
 "alu"
-]
+],
+"id": "m128"
 },
 {
 "n": "捷成鋁質裝飾工程公司",
@@ -2058,7 +2186,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m129"
 },
 {
 "n": "志誠鋁鋼工程有限公司",
@@ -2075,7 +2204,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m130"
 },
 {
 "n": "博毅工程公司",
@@ -2092,7 +2222,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m131"
 },
 {
 "n": "洪輝鋁質裝飾工程公司",
@@ -2109,7 +2240,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m132"
 },
 {
 "n": "華冠裝飾工程有限公司",
@@ -2126,7 +2258,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m133"
 },
 {
 "n": "東源裝飾工程公司",
@@ -2143,7 +2276,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m134"
 },
 {
 "n": "海洋裝飾工程公司",
@@ -2160,7 +2294,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m135"
 },
 {
 "n": "金來工程有限公司",
@@ -2177,7 +2312,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m136"
 },
 {
 "n": "永光水電裝修工程",
@@ -2194,7 +2330,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m137"
 },
 {
 "n": "恆昌鋁質(不銹鋼)工程",
@@ -2212,7 +2349,8 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "steel"
-]
+],
+"id": "m138"
 },
 {
 "n": "威廉鋁質工程公司",
@@ -2229,7 +2367,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "alu"
-]
+],
+"id": "m139"
 },
 {
 "n": "裕新玻璃鏡業",
@@ -2246,7 +2385,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "glass"
-]
+],
+"id": "m140"
 },
 {
 "n": "黃培記工程公司",
@@ -2261,7 +2401,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m141"
 },
 {
 "n": "駿藝裝飾工程有限公司",
@@ -2278,7 +2419,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m142"
 },
 {
 "n": "眾利民傢俬",
@@ -2289,7 +2431,8 @@ window.HKAWDA_MEMBERS = [
 "d": "南區",
 "de": "Southern",
 "c": false,
-"s": []
+"s": [],
+"id": "m143"
 },
 {
 "n": "雅文建筑材料有限公司",
@@ -2304,7 +2447,8 @@ window.HKAWDA_MEMBERS = [
 "d": "灣仔",
 "de": "Wan Chai",
 "c": false,
-"s": []
+"s": [],
+"id": "m144"
 },
 {
 "n": "英豪窗簾有限公司",
@@ -2319,7 +2463,8 @@ window.HKAWDA_MEMBERS = [
 "d": "灣仔",
 "de": "Wan Chai",
 "c": false,
-"s": []
+"s": [],
+"id": "m145"
 },
 {
 "n": "濃安號",
@@ -2332,7 +2477,8 @@ window.HKAWDA_MEMBERS = [
 "d": "中西區",
 "de": "Central & Western",
 "c": false,
-"s": []
+"s": [],
+"id": "m146"
 },
 {
 "n": "新利公司",
@@ -2347,7 +2493,8 @@ window.HKAWDA_MEMBERS = [
 "d": "東區",
 "de": "Eastern",
 "c": false,
-"s": []
+"s": [],
+"id": "m147"
 },
 {
 "n": "專業水電維修裝修工程",
@@ -2364,7 +2511,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m148"
 },
 {
 "n": "鴻恩裝修工程",
@@ -2379,7 +2527,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m149"
 },
 {
 "n": "得利(香港)工程",
@@ -2392,7 +2541,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m150"
 },
 {
 "n": "東昇水電裝修工程",
@@ -2407,7 +2557,8 @@ window.HKAWDA_MEMBERS = [
 "c": false,
 "s": [
 "reno"
-]
+],
+"id": "m151"
 },
 {
 "n": "仨友鋁窗玻璃工程有限公司",
@@ -2423,6 +2574,7 @@ window.HKAWDA_MEMBERS = [
 "s": [
 "alu",
 "glass"
-]
+],
+"id": "m152"
 }
 ];
