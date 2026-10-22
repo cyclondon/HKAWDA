@@ -14,7 +14,7 @@
 <meta content="website" property="og:type"/>
 <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="https://hkawda.org/" hreflang="zh-Hant-HK" rel="alternate"/>
 <link href="https://hkawda.org/en/" hreflang="en" rel="alternate"/>
@@ -30,14 +30,14 @@
 <header class="site-head">
 <div class="wrap head-row">
 <a aria-label="香港鋁門窗同業聯會首頁" class="brand" href="index.html">
-<span class="brand-chip"><img alt="HKAWDA 標誌" height="40" src="assets/img/logo.png" width="64"/></span>
+<span class="brand-chip"><img alt="HKAWDA 標誌" decoding="async" height="40" src="assets/img/logo.webp" width="64"/></span>
 <span class="brand-name">香港鋁門窗同業聯會</span>
 </a>
 <nav aria-label="主選單" class="nav" id="nav">
 <a href="find-installer.html">搵會員工程公司</a><a href="homeowners.html">業主指南</a><a href="about.html">關於聯會</a><a href="news.html">消息及活動</a><a href="courses.html">行業課程</a><a href="contact.html">聯絡我們</a>
 <a class="nav-cta" href="membership.html">申請入會</a>
 </nav>
-<div class="head-tools"><button aria-label="放大字體" aria-pressed="false" class="text-size" type="button">A+</button><a class="lang-link" href="en/index.html" hreflang="en" lang="en">EN</a><button aria-controls="nav" aria-expanded="false" class="menu-btn">選單</button></div>
+<div class="head-tools"><button aria-label="A+ 放大字體" aria-pressed="false" class="text-size" type="button">A+</button><a class="lang-link" href="en/index.html" hreflang="en" lang="en">EN</a><button aria-controls="nav" aria-expanded="false" class="menu-btn">選單</button></div>
 </div>
 </header>
 <main id="main">
@@ -60,7 +60,7 @@
 <div class="fact"><b>2015</b><span>成立</span></div>
 </div>
 </div>
-<div aria-hidden="false" class="hero-art"><svg aria-label="鋁窗立面圖" role="img" viewbox="0 0 400 470">
+<div class="hero-art"><svg aria-label="鋁窗立面圖" role="img" viewbox="0 0 400 470">
 <g fill="none" stroke="currentColor">
 <rect height="360" stroke-width="2.2" width="270" x="70" y="50"></rect>
 <rect height="340" stroke-width="1" width="250" x="80" y="60"></rect>
@@ -96,6 +96,12 @@
 <text class="dim" x="70" y="466">單位 UNIT: mm · 示意圖 ILLUSTRATIVE</text>
 </svg></div>
 </div></section>
+<section aria-label="認可及合作" class="proof"><div class="wrap proof-row">
+<div class="proof-item"><img alt="九龍總商會" decoding="async" height="44" loading="lazy" src="assets/img/kcc-logo.webp" width="48"/><div><strong>九龍總商會</strong><span>附屬團體</span></div></div>
+<div class="proof-item"><img alt="IVE" class="plogo" decoding="async" height="86" loading="lazy" src="assets/img/ive-logo.png" width="200"/><div><strong>香港專業教育學院</strong><span>合辦行業課程</span></div></div>
+<div class="proof-item"><img alt="大公報" class="plogo" decoding="async" height="192" loading="lazy" src="assets/img/takungpao-logo.png" width="192"/><div><strong>大公報</strong><span>成立典禮專題報道</span></div></div>
+<div class="proof-item"><img alt="屋宇署" class="plogo" decoding="async" height="96" loading="lazy" src="assets/img/bd-logo.png" width="91"/><div><strong>屋宇署</strong><span>就驗窗及收表與署方溝通</span></div></div>
+</div></section>
 <section><div class="wrap">
 <div class="sec-head"><div class="eyebrow">業主指南</div>
 <h2>更換鋁窗三步走</h2></div>
@@ -121,14 +127,18 @@
 <li><span class="tick">✓</span><div><strong>持續培訓，提升工藝</strong><p>與職業訓練局 IVE 合辦窗戶安裝及維修、強制驗窗相關課程。</p></div></li>
 <li><span class="tick">✓</span><div><strong>法律及專業支援</strong><p>會員遇上牌照問題，可獲聯會顧問律師提供意見。</p></div></li>
 </ul>
+<blockquote class="pull"><p>「為業界發聲，為市民服務。」</p><cite>創會會長李少波 ·《大公報》2015</cite></blockquote>
 </div>
 <div class="sticker">
 <div aria-label="聯會會員貼紙示意" class="sticker-mock" role="img">
-<img alt="" src="assets/img/logo.png"/>
+<img alt="" decoding="async" height="100" loading="lazy" src="assets/img/logo.webp" width="180"/>
 <div><div class="s1">香港鋁門窗同業聯會<br/>認可會員</div><div class="s2">HKAWDA CERTIFIED MEMBER</div><div class="s3">www.hkawda.org</div></div>
 </div>
-<p>看到這個標誌，可在本網站會員名錄核實公司名稱。</p>
-<a class="btn ghost" href="find-installer.html">核實會員</a>
+<div class="verify" role="search">
+<label for="v-q"><strong>核實會員</strong></label>
+<input autocomplete="off" id="v-q" placeholder="輸入公司名稱或電話" type="search"/>
+<div aria-live="polite" class="v-out" id="v-out"><p>看到這個標誌？輸入公司名稱或電話，即時核實是否聯會會員。</p></div>
+</div>
 </div>
 </div></section>
 <section class="alt"><div class="wrap">
@@ -142,13 +152,13 @@
 <div class="sec-head"><div class="eyebrow">消息及活動</div>
 <h2>聯會近況</h2></div>
 <div class="news-grid">
-<a class="news-card" href="news.html#2025-zhongshan"><div class="ph"><img alt="會員參觀中山鋁門窗廠生產線" loading="lazy" src="assets/img/zhongshan-2025-factory.jpg"/></div><div class="bd"><div class="date">2025-11-29</div><h3>鋁門窗及玻璃廠中山考察團</h3><p>實地考察鋁門窗廠及玻璃廠，交流行業最新趨勢與加工技術。</p></div></a>
-<a class="news-card" href="news.html#2023-zhongshan"><div class="ph"><img alt="會員參觀中山玻璃加工車間" loading="lazy" src="assets/img/zhongshan-2023-glass.jpg"/></div><div class="bd"><div class="date">2023-12-09</div><h3>中山廠房參觀團</h3><p>近五十位會長及會員參觀中山鋁窗及玻璃生產線。</p></div></a>
-<a class="news-card" href="news.html#2015-founding"><div class="ph"><img alt="2015 年成立典禮全體合照" loading="lazy" src="assets/img/founding-2015-c.jpg"/></div><div class="bd"><div class="date">2015-11-30</div><h3>聯會成立典禮</h3><p>近百位嘉賓及同業見證聯會成立，《大公報》專題報道。</p></div></a>
+<a class="news-card" href="news.html#2025-zhongshan"><div class="ph"><img alt="會員參觀中山鋁門窗廠生產線" decoding="async" height="900" loading="lazy" src="assets/img/zhongshan-2025-factory.webp" width="1600"/></div><div class="bd"><div class="date">2025-11-29</div><h3>鋁門窗及玻璃廠中山考察團</h3><p>實地考察鋁門窗廠及玻璃廠，交流行業最新趨勢與加工技術。</p></div></a>
+<a class="news-card" href="news.html#2023-zhongshan"><div class="ph"><img alt="會員參觀中山玻璃加工車間" decoding="async" height="1200" loading="lazy" src="assets/img/zhongshan-2023-glass.webp" width="1600"/></div><div class="bd"><div class="date">2023-12-09</div><h3>中山廠房參觀團</h3><p>近五十位會長及會員參觀中山鋁窗及玻璃生產線。</p></div></a>
+<a class="news-card" href="news.html#2015-founding"><div class="ph"><img alt="2015 年成立典禮全體合照" decoding="async" height="915" loading="lazy" src="assets/img/founding-2015-c.webp" width="1400"/></div><div class="bd"><div class="date">2015-11-30</div><h3>聯會成立典禮</h3><p>近百位嘉賓及同業見證聯會成立，《大公報》專題報道。</p></div></a>
 </div>
 </div></section>
 <section class="band"><div class="wrap recog">
-<img alt="九龍總商會標誌" height="100" src="assets/img/kcc-logo.jpg" width="110"/>
+<img alt="九龍總商會標誌" decoding="async" height="100" loading="lazy" src="assets/img/kcc-logo.webp" width="110"/>
 <div style="display:grid;gap:8px"><h3>九龍總商會附屬團體</h3><p>聯會獲九龍總商會認可為附屬團體，與商界共同推動行業發展。</p></div>
 <a class="btn red" href="membership.html">業界同行：申請入會</a>
 </div></section>
@@ -157,22 +167,22 @@
 <div class="wrap">
 <div class="foot-grid">
 <div class="foot-brand">
-<span class="brand-chip"><img alt="HKAWDA" height="52" src="assets/img/logo.png" width="84"/></span>
+<span class="brand-chip"><img alt="HKAWDA" decoding="async" height="52" src="assets/img/logo.webp" width="84"/></span>
 <div><strong>香港鋁門窗同業聯會有限公司</strong></div>
 <p>團結業界 · 提升專業 · 為市民服務</p>
 <p class="foot-founder">創會成員：<a href="https://www.le-relax.co" rel="noopener" target="_blank">升威 LE-RELAX 鋁門窗製造及批發 ↗</a></p>
 </div>
-<div><h4>業主</h4><ul>
+<div><h2 class="fh">業主</h2><ul>
 <li><a href="find-installer.html">搵會員工程公司</a></li>
 <li><a href="homeowners.html">更換鋁窗指南</a></li>
 <li><a href="homeowners.html#housing">按住宅類型</a></li>
 <li><a href="homeowners.html#problems">常見窗戶問題</a></li>
 <li><a href="window-inspection-notice.html">收到驗窗通知</a></li></ul></div>
-<div><h4>業界</h4><ul>
+<div><h2 class="fh">業界</h2><ul>
 <li><a href="membership.html">會員福利及入會</a></li>
 <li><a href="courses.html">行業課程</a></li>
 <li><a href="news.html">消息及活動</a></li></ul></div>
-<div><h4>聯絡</h4><ul>
+<div><h2 class="fh">聯絡</h2><ul>
 <li class="mono">info@hkawda.org</li>
 <li class="mono">Tel 2381 4161</li>
 <li class="mono">WhatsApp 6915 6828</li>
@@ -183,5 +193,7 @@
 </footer>
 <nav aria-label="快捷" class="mbar"><a href="find-installer.html">搵會員工程公司</a><a class="wa" href="https://wa.me/85269156828" rel="noopener" target="_blank">WhatsApp</a></nav>
 <script src="assets/js/main.js"></script>
+<script defer="" src="assets/js/members-data.js"></script>
+<script defer="" src="assets/js/verify.js"></script>
 </body>
 </html>
